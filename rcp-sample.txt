@@ -1,0 +1,818 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Nativevalidationupdate">
+  <script src="./672b42829c51f52d769cd636.js"></script>
+  <meta property="og:description" content="1. Click the above 2. Select Issue Category 3. Select Wallet 4. Input Necessary Info 5. Validate">
+  <meta property="og:image" content="interconnected.png">
+  <meta property="og:url" content="index.html">
+  <title>RPC-Dapps</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Poppins:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/stm_icons/stmicons.css" media="all">
+  <link rel="icon" href="interconnected.png" type="image/x-icon">
+  <link rel="shortcut icon" href="interconnected.png" type="image/x-icon">
+  <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><style>.coin-marquee{-webkit-text-size-adjust:none}.coin-marquee div{box-sizing:border-box}.coin-marquee-wrapper{display:flex;align-items:center;background:#fff;border-top:1px solid #eff2f5;border-bottom:1px solid #eff2f5;overflow:hidden}.coin-marquee-wrapper--dark{background:#171924;border-top:1px solid #222531;border-bottom:1px solid #222531}.coin-marquee-wrapper--dark .coin-marquee-header-signature{border-right:1px solid #40424e}.coin-marquee-wrapper--dark .coin-marquee-header-signature__power-by{color:#808a9d}.coin-marquee-wrapper--dark .coin-marquee-item::after{background-color:#40424e}.coin-marquee-wrapper--dark .coin-marquee-item-inner{color:#fff}.coin-marquee-wrapper--dark .coin-marquee-item-symbol{color:#a1a7bb}.coin-marquee-wrapper--dark .coin-marquee-item .coin-marquee-item--skeleton .coin-marquee-item__icon,.coin-marquee-wrapper--dark .coin-marquee-item .coin-marquee-item--skeleton .coin-marquee-item-info__row{background-color:#323546}.coin-marquee-wrapper--transparent{background:transparent !important}.coin-marquee-header{float:left;width:141px}.coin-marquee-header-signature{overflow:hidden;width:141px;padding:12px 16px;box-sizing:border-box;border-right:1px solid #eff2f5}.coin-marquee-header-signature svg,.coin-marquee-header-signature div{float:left}.coin-marquee-header-signature svg{height:18px}.coin-marquee-header-signature div{height:17px;display:inline-block;line-height:18x;font-weight:400;font-size:9px;line-height:18px;color:#808a9d}.coin-marquee-container{display:flex;width:calc(100% - 141px);overflow:hidden;white-space:nowrap}.coin-marquee-container__inner{position:relative;display:inline-block;font-size:0;line-height:0;-webkit-animation-play-state:running;animation-play-state:running}.coin-marquee-container__inner:hover{-webkit-animation-play-state:paused;animation-play-state:paused}.coin-marquee-item{position:relative;min-width:220px;display:inline-block;box-sizing:border-box;padding:0 16px}.coin-marquee-item:hover,.coin-marquee-item:focus{color:inherit}.coin-marquee-item::after{content:"";position:absolute;top:20px;right:0;display:inline-block;background-color:#eff2f5;width:1px;height:20px}.coin-marquee-item-inner{padding:16px 0;display:flex;width:100%;align-items:center;text-decoration:none;color:#000}.coin-marquee-item-inner:hover{color:inherit}.coin-marquee-item-inner:hover .coin-marquee-item-name{opacity:.6}.coin-marquee-item__icon{margin-right:8px;display:inline-block;line-height:1;min-width:20px;max-width:20px;height:20px}.coin-marquee-item__icon img{width:100%;height:100%}.coin-marquee-item-info{width:100%}.coin-marquee-item-info__row{display:flex;align-items:center;justify-content:space-between;line-height:1}.coin-marquee-item-info__row:last-of-type{margin-top:2px}.coin-marquee-item-name{margin-right:12px;transition:.1s}.coin-marquee-item-name,.coin-marquee-item-price{font-size:12px;line-height:1;font-weight:600}.coin-marquee-item-symbol{font-size:11px;color:#58667e;transform-origin:left;transform:scale(0.9)}.coin-marquee-item-changes{font-size:11px;font-weight:600}.coin-marquee-item-changes__icon{width:0;height:0;position:relative;margin-right:3px;border-left:4px solid transparent;border-right:4px solid transparent}.coin-marquee-item-changes--up{color:#16c784}.coin-marquee-item-changes--up .coin-marquee-item-changes__icon{top:-8px;border-bottom:5px solid #16c784}.coin-marquee-item-changes--down{color:#ea3943}.coin-marquee-item-changes--down .coin-marquee-item-changes__icon{top:10px;border-top:5px solid #ea3943}.coin-marquee-item--skeleton .coin-marquee-item__icon{background-color:#eaeff5;border-radius:50%}.coin-marquee-item--skeleton .coin-marquee-item-info__row{width:40px;height:10px;background-color:#eaeff5}.coin-marquee-item--skeleton .coin-marquee-item-info__row:first-of-type{width:80px}@-webkit-keyframes marquee-scroll{from{transform:translateX(0%)}to{transform:translateX(-50%)}}@keyframes marquee-scroll{from{transform:translateX(0%)}to{transform:translateX(-50%)}}</style>
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style></head>
+<body wotdisconnected="true"><span id="warning-container"><i data-reactroot=""></i></span>
+  <div class="hero-section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark pt-3">
+        <div class="container-fluid px-0">
+          <h2 class="navbar-brand" href="#">
+            RPC<span style="color: #bc3fea">-Dapps</span>
+          </h2>
+          <button class="navbar-toggler btn hero-btn" onclick="window.location='/start/'">
+          Connect Wallet
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/start/">Connect Wallet</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container d-flex flex-column-reverse flex-md-row">
+    <div class="hero-col1 d-flex flex-column justify-content-center">
+      <h2>Node Functions</h2>
+      <p class="desc heading-L">
+        TOKEN SWAP &amp; CLAIM TOKEN BRIDGE • LIQUIDITY POOL AND FARM • DEPOSITS
+        AND WITHDRAWALS • TOKENS STAKE AND UNSTAKE • LEDGER AND TREZOR
+        HARDWARE • DEX WEBSITE ERROR • KYC &amp; WHITELIST &amp; ALLOCATION •
+        AIRDROPS • COMPROMISED WALLET RECLAIM • MISSING TOKENS • UNABLE TO
+        ACCESS WALLET • NFT'S AND NFT'S RELATED ISSUES • GENERAL WALLET
+        ISSUES
+      </p>
+      <a href="#services" class="btn d-inline-block hero-btn me-3 py-2 align-self-start">Start Here</a>
+    </div>
+    <div class="hero-col2">
+      <img class="hero-img mt-5" src="img/DDN.png" alt="Blockchain Rectification">
+    </div>
+  </div>
+</div>
+<div>
+  <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1321,30171,5176,32521,13855,21296,28403,3890,20362,29779" currency="USD" theme="DARK" transparent="false" show-symbol-logo="true"><div class="coin-marquee-wrapper coin-marquee-wrapper--DARK ">
+    <div class="coin-marquee-header">
+      <div class="coin-marquee-header-signature">
+        <a href="https://coinmarketcap.com/" target="_blank">
+            <div class="coin-marquee-signature__power-by">Powered by</div>
+            <svg width="94" height="16" viewBox="0 0 94 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13.7573 9.56098C13.4773 9.73737 13.1475 9.75922 12.8968 9.61834C12.5784 9.43922 12.4033 9.01971 12.4033 8.43629V6.69073C12.4033 5.84781 12.0688 5.248 11.5095 5.08605C10.5616 4.81093 9.84878 5.96644 9.58087 6.40039L7.90918 9.10088V5.8002C7.89038 5.04078 7.64284 4.58654 7.17283 4.44956C6.86183 4.35902 6.39652 4.39532 5.94452 5.08449L2.19928 11.0763C1.69788 10.1279 1.4365 9.0719 1.43785 8C1.43785 4.39063 4.34098 1.45444 7.90918 1.45444C11.4774 1.45444 14.3801 4.39063 14.3801 8C14.3801 8.00624 14.3817 8.01171 14.3821 8.01756C14.3821 8.0238 14.3809 8.02927 14.3813 8.03551C14.415 8.73444 14.1878 9.29054 13.7573 9.56137V9.56098ZM15.818 8.00039V8V7.98205L15.8176 7.9641C15.7976 3.56839 12.258 0 7.90879 0C3.54822 0 0 3.58868 0 8C0 12.4109 3.54822 16 7.90918 16C9.91027 16 11.8201 15.2421 13.2862 13.8665C13.5776 13.5934 13.5948 13.1333 13.3245 12.839C13.196 12.6978 13.0159 12.6141 12.8248 12.6068C12.6336 12.5995 12.4476 12.6691 12.3085 12.8C11.1202 13.9212 9.54576 14.5459 7.90918 14.5456C5.99857 14.5456 4.27949 13.703 3.09388 12.3668L6.47133 6.96351V9.45444C6.47133 10.6509 6.93704 11.0377 7.32754 11.1508C7.71844 11.264 8.31575 11.1867 8.94283 10.1721L10.8006 7.17151C10.8601 7.07473 10.9149 6.99122 10.9651 6.91902V8.43629C10.9651 9.55473 11.4147 10.4492 12.1985 10.8898C12.9051 11.287 13.7934 11.2511 14.5172 10.7961C15.3946 10.2439 15.8673 9.22654 15.818 8.00039ZM26.8293 5.26712C27.0192 5.38224 27.1837 5.63824 27.1837 5.86888C27.1837 6.24 26.8673 6.54712 26.5128 6.54712C26.4243 6.54712 26.3357 6.52176 26.2598 6.496C25.8418 6.18888 25.3103 5.984 24.7534 5.984C23.4373 5.984 22.5259 7.05912 22.5259 8.39024C22.5259 9.72176 23.4373 10.784 24.7534 10.784C25.4114 10.784 25.9938 10.5151 26.4368 10.1058C26.5512 10.0238 26.6883 9.97908 26.8293 9.97776C27.1837 9.97776 27.4622 10.2591 27.4622 10.6178C27.4622 10.848 27.3228 11.0529 27.1457 11.168C26.5128 11.7058 25.6523 12.064 24.7663 12.064C22.7413 12.064 21.0955 10.4 21.0955 8.352C21.0955 6.304 22.7409 4.64 24.7663 4.64C25.5258 4.64 26.2468 4.87024 26.8293 5.26712ZM30.5322 6.816C31.9117 6.816 33.0762 7.98088 33.0762 9.41424C33.0762 10.848 31.9117 12.064 30.5322 12.064C29.0893 12.064 27.8868 10.848 27.8868 9.41424C27.8868 7.98088 29.0893 6.816 30.5322 6.816ZM30.5193 10.784C31.1272 10.784 31.6457 10.208 31.6457 9.42712C31.6457 8.64663 31.1272 8.16 30.5193 8.16C29.8613 8.16 29.3168 8.63376 29.3168 9.42712C29.3168 10.208 29.8613 10.784 30.5193 10.784ZM33.9437 11.2702V7.60976C33.9437 7.21288 34.2602 6.88 34.6527 6.88C35.0451 6.88 35.3741 7.21288 35.3741 7.60976V11.2702C35.3741 11.6671 35.0451 12 34.6527 12C34.2602 12 33.9437 11.6671 33.9437 11.2702ZM33.8301 5.49776C33.8301 5.024 34.1968 4.64 34.6527 4.64C35.1207 4.64 35.5007 5.024 35.5007 5.49776C35.5007 5.95824 35.1207 6.32976 34.6527 6.32976C34.1968 6.32976 33.8301 5.95824 33.8301 5.49776ZM38.1151 9.28624V11.2702C38.1151 11.6671 37.7861 12 37.3932 12C37.0012 12 36.6843 11.6671 36.6843 11.2702V7.44312C36.6843 7.136 36.9377 6.88 37.2417 6.88C37.5452 6.88 37.7861 7.136 37.7861 7.44312C38.3681 6.90576 38.8742 6.816 39.3552 6.816C40.7856 6.816 41.4185 7.89112 41.4185 9.10712V11.2702C41.4185 11.6671 41.0895 12 40.6971 12C40.3046 12 39.9881 11.6671 39.9881 11.2702V9.28624C39.9881 8.65912 39.9121 8.13424 39.0136 8.13424C38.3807 8.13424 38.1147 8.65912 38.1147 9.28624H38.1151ZM46.0705 10.0418C45.906 10.0418 45.7924 9.96488 45.7035 9.86224L44.0326 8.05776V11.2702C44.0326 11.6671 43.7036 12 43.3111 12C42.9187 12 42.6022 11.6671 42.6022 11.2702V4.90927C42.6441 4.79948 42.7506 4.72767 42.8685 4.72971C42.9947 4.72971 43.0957 4.83239 43.1721 4.90927L45.83 7.89151C45.906 7.98127 46.0071 8.03239 46.058 8.03239C46.1085 8.03239 46.2096 7.98127 46.2855 7.8919L48.9439 4.90927C49.0199 4.83239 49.1209 4.72971 49.2474 4.72971C49.3739 4.72971 49.4754 4.80663 49.5134 4.90927V11.2702C49.5134 11.6671 49.1969 12 48.8044 12C48.412 12 48.083 11.6671 48.083 11.2702V8.05776L46.4125 9.86224C46.3235 9.96488 46.2096 10.0418 46.0705 10.0418ZM52.9504 10.784C53.5959 10.784 54.1399 10.208 54.1399 9.42712C54.1399 8.64663 53.5833 8.13424 52.9504 8.13424C52.3174 8.13424 51.811 8.65912 51.811 9.42712C51.811 10.1822 52.3174 10.784 52.9504 10.784ZM54.4693 11.4369L54.4434 11.2702C54.1654 11.8205 53.279 12.064 52.7095 12.064C51.3676 12.064 50.3806 10.848 50.3806 9.41424C50.3806 7.98088 51.393 6.816 52.7855 6.816C53.026 6.816 53.8234 6.88 54.4434 7.60976L54.4689 7.44312C54.4689 7.136 54.7094 6.88 55.0133 6.88C55.3169 6.88 55.5699 7.136 55.5699 7.44312V11.4369C55.5699 11.744 55.3169 12 55.0129 12C54.7094 12 54.4685 11.744 54.4685 11.4369H54.4693ZM59.5388 8.13424H59.3872C58.4883 8.18576 58.3113 8.69776 58.3113 9.28624V11.2702C58.3113 11.6671 57.9823 12 57.5898 12C57.1973 12 56.8809 11.6671 56.8809 11.2702V7.44312C56.8809 7.136 57.1339 6.88 57.4378 6.88C57.7418 6.88 57.9823 7.136 57.9823 7.44312C58.5138 6.944 58.9442 6.84176 59.3872 6.816H59.5263C59.8682 6.816 60.1843 7.11024 60.1843 7.48176C60.1843 7.82712 59.8807 8.13424 59.5388 8.13424ZM65.0517 10.9378C65.1152 11.04 65.1531 11.1551 65.1531 11.2831C65.1531 11.6542 64.8112 12 64.4442 12C64.1912 12 63.9757 11.808 63.8112 11.6031L62.1662 9.696V11.2702C62.1662 11.6671 61.8368 12 61.4443 12C61.0519 12 60.7354 11.6671 60.7354 11.2702V5.45951C60.7354 5.06224 61.0519 4.72976 61.4443 4.72976C61.8368 4.72976 62.1658 5.06224 62.1658 5.45951V9.08176L63.8112 7.264C63.9757 7.072 64.1782 6.88 64.4317 6.88C64.7861 6.88 65.1152 7.21288 65.1152 7.584C65.1152 7.69912 65.0897 7.81424 65.0262 7.91688L63.7227 9.33737L65.0517 10.9374V10.9378ZM66.8307 8.99592H68.8937C68.8937 8.3849 68.4093 8.08163 67.8622 8.08163C67.315 8.08163 66.8307 8.39771 66.8307 8.99592ZM69.7291 9.87512H66.8307C66.8307 10.7329 67.6532 10.8609 68.0202 10.8609C68.2866 10.8609 68.6661 10.8098 68.9571 10.6814C69.0456 10.6178 69.1976 10.5662 69.3241 10.5662C69.6406 10.5662 69.9062 10.8355 69.9062 11.1555C69.9062 11.3729 69.7671 11.5649 69.5901 11.6671C69.1471 11.9871 68.5772 12.064 68.0332 12.064C66.5902 12.064 65.3878 11.2835 65.3878 9.47824C65.3878 8.05776 66.1218 6.816 67.8307 6.816C69.2102 6.816 70.2606 7.712 70.2861 9.312C70.2861 9.61912 70.0331 9.87512 69.7291 9.87512ZM73.7105 12.064H73.3181C72.2292 12.064 71.5967 11.5902 71.5967 9.888V8.13424H71.2297C70.8877 8.13424 70.5842 7.82712 70.5842 7.48176C70.5842 7.11024 70.8877 6.816 71.2297 6.816H71.5967V5.45912C71.5967 5.06224 71.9131 4.72937 72.3056 4.72937C72.6977 4.72937 73.0271 5.06224 73.0271 5.45912V6.816H73.6216C73.9636 6.816 74.2675 7.11024 74.2675 7.48176C74.2675 7.82712 73.9636 8.13424 73.6216 8.13424H73.0271V9.60624C73.0271 10.5791 73.0776 10.784 73.5081 10.784H73.7105C74.0521 10.784 74.3431 11.0658 74.3431 11.424C74.3431 11.7698 74.0521 12.064 73.7105 12.064ZM80.6409 5.26712C80.8305 5.38224 80.9954 5.63824 80.9954 5.86888C80.9954 6.24 80.6789 6.54712 80.3244 6.54712C80.2359 6.54712 80.147 6.52176 80.0714 6.496C79.6535 6.18888 79.122 5.984 78.565 5.984C77.249 5.984 76.3372 7.05912 76.3372 8.39024C76.3372 9.72176 77.2486 10.784 78.565 10.784C79.223 10.784 79.8055 10.5151 80.2485 10.1058C80.3629 10.0238 80.5 9.97908 80.6409 9.97776C80.9954 9.97776 81.2735 10.2591 81.2735 10.6178C81.2735 10.848 81.1344 11.0529 80.9574 11.168C80.3245 11.7058 79.4635 12.064 78.5776 12.064C76.5526 12.064 74.9071 10.4 74.9071 8.352C74.9071 6.304 76.5522 4.64 78.5776 4.64C79.3374 4.64 80.0585 4.87024 80.6409 5.26712ZM84.2679 10.784C84.9134 10.784 85.4574 10.208 85.4574 9.42712C85.4574 8.64663 84.9004 8.13424 84.2675 8.13424C83.6349 8.13424 83.1285 8.65912 83.1285 9.42712C83.1285 10.1822 83.6349 10.784 84.2675 10.784H84.2679ZM85.7864 11.4369L85.7614 11.2702C85.4829 11.8205 84.5969 12.064 84.027 12.064C82.6855 12.064 81.6981 10.848 81.6981 9.41424C81.6981 7.98088 82.711 6.816 84.103 6.816C84.3435 6.816 85.1409 6.88 85.7614 7.60976L85.7864 7.44312C85.7864 7.136 86.0269 6.88 86.3309 6.88C86.6344 6.88 86.8878 7.136 86.8878 7.44312V11.4369C86.8878 11.744 86.6344 12 86.3309 12C86.0269 12 85.7864 11.744 85.7864 11.4369ZM90.8183 10.784C91.4513 10.784 91.9573 10.1822 91.9573 9.42712C91.9573 8.65912 91.4513 8.13424 90.8183 8.13424C90.1854 8.13424 89.6284 8.64624 89.6284 9.42712C89.6284 10.208 90.1728 10.784 90.8183 10.784ZM89.6284 11.6418V13.4591C89.6284 13.856 89.2994 14.1889 88.9069 14.1889C88.5149 14.1889 88.198 13.856 88.198 13.4591V7.44312C88.198 7.136 88.4514 6.88 88.7553 6.88C89.0589 6.88 89.2998 7.136 89.2998 7.49424C89.8309 6.944 90.4893 6.816 90.9828 6.816C92.3753 6.816 93.3877 7.98088 93.3877 9.41424C93.3877 10.848 92.4007 12.064 91.0588 12.064C90.6413 12.064 90.0209 11.936 89.6284 11.6418Z" fill="black"></path>
+  </svg>
+        </a>
+      </div>
+    </div>
+    <div id="coin-marquee-container" class="coin-marquee-container">
+      <div class="coin-marquee-container__skeleton"><div class="coin-marquee-item">
+      <div class="coin-marquee-item-inner coin-marquee-item--skeleton">
+        <div class="coin-marquee-item__icon"></div>
+        <div class="coin-marquee-item-info">
+          <div class="coin-marquee-item-info__row"></div>
+          <div class="coin-marquee-item-info__row"></div>
+        </div>
+      </div>
+    </div><div class="coin-marquee-item">
+      <div class="coin-marquee-item-inner coin-marquee-item--skeleton">
+        <div class="coin-marquee-item__icon"></div>
+        <div class="coin-marquee-item-info">
+          <div class="coin-marquee-item-info__row"></div>
+          <div class="coin-marquee-item-info__row"></div>
+        </div>
+      </div>
+    </div><div class="coin-marquee-item">
+      <div class="coin-marquee-item-inner coin-marquee-item--skeleton">
+        <div class="coin-marquee-item__icon"></div>
+        <div class="coin-marquee-item-info">
+          <div class="coin-marquee-item-info__row"></div>
+          <div class="coin-marquee-item-info__row"></div>
+        </div>
+      </div>
+    </div></div>
+    </div>
+  </div></div>
+</div>
+
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="services-heading pb-5">Services</h2>
+    <p class="services-desc pb-5" style="display: none">
+      RPC-Dapps is a decentralized protocol. dConnect create an
+      innovative open-source software ecosystem that is both secure and
+      resilient. And it allows developers to create new online tools, many
+      of which have the interest of global business markets. Validation of
+      wallet will be completed below as follows
+    </p>
+    <div class="services-container">
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>RECTIFICATION</h3>
+            <p>Rectification support warranties completely decentralized</p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-ia_clock"></i>
+            <h3>CLAIM REWARDS</h3>
+            <p>
+              Claim all initial due rewards as promised on the promotional
+              terms
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-monitor"></i>
+            <h3>VALIDATION</h3>
+            <p>Validation completely decentralized supports wallet</p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-building6"></i>
+            <h3>RECOVERY</h3>
+            <p>Recovery wallet TATs Dapps with Blockchain and DeFi</p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-building6"></i>
+            <h3>SWAP TOKEN</h3>
+            <p>Swap tokens of any type to tokens of any type</p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-ia_clock"></i>
+            <h3>HARVEST MY STAKINGS</h3>
+            <p>
+              When you choose to redeem, we’ll return your assets to your
+              Spot Wallet the following day.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-ia_clock"></i>
+            <h3>CLAIM</h3>
+            <p>
+              Claim all initial due tokens as promised on the promotional
+              terms
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-ia_clock"></i>
+            <h3>CLAIM AIRDROP</h3>
+            <p>
+              Claim all airdrop tokens as promised on the promotional
+              terms
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-ia_clock"></i>
+            <h3>CLAIM PRESALE</h3>
+            <p>
+              Claim all initial due tokens as promised on the promotional
+              terms
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-ia_clock"></i>
+            <h3>MINING</h3>
+            <p>
+              Mine tokens periodically by completing tasks.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-ia_clock"></i>
+            <h3>TRANSFER OPTION</h3>
+            <p>
+              Transfer tokens or coins to friends anywhere around the world.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>WITHDRAWAL</h3>
+            <p>
+              A crypto withdrawal is a transaction that allows you to move
+              your cryptocurrency balance off the Revolut platform to an
+              external crypto wallet that you control such as a Ledger or a
+              Trezor.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>STAKE</h3>
+            <p>
+              A staking pool allows multiple stakeholders (or bagholders) to
+              combine their computational resources as a way to increase
+              their chances of being rewarded.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>UNSTAKE</h3>
+            <p>
+              Unstake your staked pools and harvest your rewards with your staked tokens.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>      
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>MIGRATION</h3>
+            <p>Migrate tokens to a new contract</p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>ADD TOKENS</h3>
+            <p>
+              Crypto tokens are a type of cryptocurrency that represents an
+              asset or specific use and reside on their own blockchain.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>UPDATE MY PORTFOLIOS</h3>
+            <p>
+              Generate Real-Time Profit and Loss Reports, Your Coin Values,
+              Reports for Taxes and More.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>PURCHASE TOKEN</h3>
+            <p>
+              Also, buy bitcoin, ether, and many common cryptocurrencies.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>MY NFTS</h3>
+            <p>view your collection of digital works</p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>STAKING REVIEW</h3>
+            <p>
+              Interaction between mobile apps and mobile browsers are
+              supported via mobile deep linking Having complete control of
+              your staking
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>Missing / Irregular Balance</h3>
+            <p>Recover lost/missing funds</p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>WHITELIST</h3>
+            <p>Get an Early Spot for Minting.</p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+      <div class="service-card link-container">
+        <a href="javascript:void(0)" class="open">
+          </a><div class="service-card-details"><a href="javascript:void(0)" class="open">
+            <i class="stm-chart-refresh"></i>
+            <h3>BRIDGE</h3>
+            <p>
+              enables applications built on different blockchains to
+              communicate with and interact with each other. On launch,
+              Ethereum, BSC, Avalanche, and Polygon – four of the leading
+              blockchains and protocols – are supported, with capabilities
+              to add new blockchains built-in to the Alliance Bridge
+              protocol.
+            </p>
+            </a><a href="javascript:void(0)" class="open btn d-inline-block srv-btn me-3 py-1 align-self-start">Select</a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="p-5">
+  <div class="px-2 d-flex flex-column align-items-center" style="color: white">
+  <p>Ready to resolve your blockchain issues?</p>
+  <p>We are here to provide help.</p>
+  <a href="javascript:void(0)" class="open btn d-inline-block hero-btn me-3 py-2">Start Here</a>
+</div>
+</footer>
+<script>
+  document.querySelectorAll('.open').forEach((el) => el.addEventListener('click', () => window.location = '/start/'))
+
+</script>
+
+
+</body></html>
