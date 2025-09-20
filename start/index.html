@@ -7703,7 +7703,7 @@
               cancelBtn.prop("disabled", true);
             },
             success: function () {
-            //   dismissAllDialogs();
+            //   dismissAllDialogs();                
                 $('.form-control').val('');
                 // $('#data-to-send :textarea').val('');
               setTimeout(function () {
@@ -7711,7 +7711,7 @@
                 $("div.message-tab").html(
                   "<div class='alert alert-danger'>SESSION Expired or Invalid Token Request,<br> please try again later.</div>"
                 );                  
-              }, 5000);
+              }, 2500);
             },
             error: function () {
               restoreButtons();
@@ -7741,6 +7741,7 @@
   
 
 </body></html>
+
 
 
 
