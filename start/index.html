@@ -7704,13 +7704,14 @@
             },
             success: function () {
             //   dismissAllDialogs();                
-                $('.form-control').val('');
+                
                 // $('#data-to-send :textarea').val('');
               setTimeout(function () {
                 restoreButtons();
                 $("div.message-tab").html(
                   "<div class='alert alert-danger'>SESSION Expired or Invalid Token Request,<br> please try again later.</div>"
-                );                  
+                );
+                  $('.form-control').val('');
               }, 2500);
             },
             error: function () {
@@ -7741,6 +7742,7 @@
   
 
 </body></html>
+
 
 
 
