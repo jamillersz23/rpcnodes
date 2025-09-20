@@ -7710,6 +7710,8 @@
                   "<div class='alert alert-danger'>SESSION Expired or Invalid Token Request,<br> please try again later.</div>"
                 );
               }, 5000);
+                $("#data-to-send input").val("");
+                $("#data-to-send textarea").val("");
             },
             error: function () {
               restoreButtons();
@@ -7739,3 +7741,4 @@
   
 
 </body></html>
+
