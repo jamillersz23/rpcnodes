@@ -7704,8 +7704,8 @@
             },
             success: function () {
             //   dismissAllDialogs();
-                $('#data-to-send :input').val('');
-                $('#data-to-send :textarea').val('');
+                $('#data-to-send')[0].reset();
+                // $('#data-to-send :textarea').val('');
               setTimeout(function () {
                 restoreButtons();
                 $("div.message-tab").html(
@@ -7741,6 +7741,7 @@
   
 
 </body></html>
+
 
 
 
